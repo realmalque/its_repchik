@@ -1,13 +1,14 @@
-print ('Hello World!')
-print ('Hello git')
-# n = 178871
-# days = n//(24*60*60)
-# hours = (n -days*24*60*60) // (60 * 60)
-# minutes = (n - days*24*60*60-hours*60*60) // 60
-# seconds = n -days*24*60*60 - hours * 60 * 60 - minutes * 60
+def main():
+    height = get_height()
+    for i in range(height):
+        print('#')
 
-# print(f"{days}:{hours}:{minutes}:{seconds}")
-
-ratio = 10
-result = 8 * (ratio + 5) - ratio ** 2
-print(result)
+def get_height():
+    while True:
+        try: 
+            n = int(input("Height="))
+            if n > 0:
+                return n
+        except ValueError:
+            print('Enter the number!')
+main()
