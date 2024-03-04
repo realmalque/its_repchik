@@ -80,3 +80,38 @@
 # age = cat.get("age")
 # cat.update(info)
 # pri
+
+# num = int(input("Enter a number: "))
+# if num > 0:
+#     if num // 2 == 0
+#         result = "Positive even number" 
+#     else:
+#         result = "Positive odd number"
+# elif num < 0:
+#     result = "Negative number"
+# else:
+#     result = "It is zero"
+
+# x = int(input("X: "))
+# y = int(input("Y: "))
+
+# if x == 0:
+#     print("X can`t be equal to zero")
+#     x = int(input("X: "))
+    
+# result = y / x
+
+# is_nice = False
+# state = "nice" if is_nice else "not nice"
+# print(state)
+fruit = "tukva"
+
+match fruit:
+    case "apple":
+        print("This is an apple.")
+    case "banana":
+        print("This is a banana.")
+    case "orange":
+        print("This is an orange.")
+    case _:
+        print("Unknown fruit.")
